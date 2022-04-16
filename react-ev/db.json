@@ -1,0 +1,21 @@
+{
+  "countries": [
+    {
+      "country": "INDIA",
+      "id": 1
+    },
+    {
+      "country": "Nepal",
+      "id": 2
+    },
+    {
+      "country": "turkey",
+      "id": 3
+    },
+    {
+      "country": "italy",
+      "id": 4
+    }
+  ],
+  "cities": []
+}
