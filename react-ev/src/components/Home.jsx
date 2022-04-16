@@ -1,6 +1,15 @@
 
+import axios from "axios"
+import { useEffect, useState } from "react"
 import "./home.css"
 export const Home =()=>{
+    const [coun,setCoun] =useState([])
+    useEffect(()=>{
+        axios.get("http://localhost:8080/cities").then((res)=>{
+            console.log(res.data)
+            setCoun(res.data)
+        })
+  },[])
 
     return (
         
@@ -17,9 +26,18 @@ export const Home =()=>{
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-
-                    </tr>
+                   {coun.map((e)=>(
+                       <tr key={e.id}>
+                           <td>{e.id}</td>
+                           <td>{e.country}</td>
+                           <td>{e.population}</td>
+                           <td>{e.city}</td>
+                           <td> <button>Edit</button></td>
+                           <td><button>Delete</button></td>
+                          
+                       </tr>
+                        
+                   ))}
                 </tbody>
             </table>
         </div>

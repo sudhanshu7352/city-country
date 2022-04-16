@@ -17,5 +17,24 @@
       "id": 4
     }
   ],
-  "cities": []
+  "cities": [
+    {
+      "city": "patna",
+      "population": "153123",
+      "country": "INDIA",
+      "id": 1
+    },
+    {
+      "city": "delhi",
+      "population": "2456151",
+      "country": "INDIA",
+      "id": 2
+    },
+    {
+      "city": "mumbai",
+      "population": "7896151",
+      "country": "INDIA",
+      "id": 3
+    }
+  ]
 }
