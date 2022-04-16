@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
-
+import "./home.css"
 
 
 export const Countries =()=>{
@@ -20,7 +20,8 @@ export const Countries =()=>{
     return (
 
         
-        <div>
+        <div className="coun_div">
+            <h1>Add Country</h1>
             <form onSubmit={handlesubmit} >
                 <input type="text" id="country" onChange={(e)=>handle(e)} />
                 <br />

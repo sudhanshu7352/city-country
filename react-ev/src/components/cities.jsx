@@ -14,7 +14,7 @@ export const Cities =()=>{
     }
     useEffect(()=>{
           axios.get("http://localhost:8080/countries").then((res)=>{
-              console.log(res.data)
+             // console.log(res.data)
               setCoun(res.data)
           })
     },[])
