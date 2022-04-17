@@ -34,7 +34,7 @@ export const Cities =()=>{
               Population:  <input type="number" id="population" onChange={(e)=>handle(e)} placeholder="population" required />
                 <br />
                 Country: <select name="" id="country" onChange={(e)=>handle(e)}>
-                     {/* <option value="">-----</option> */}
+                     <option value="">-----</option>
                      {coun.map((e)=>(
                          <option key={e.id} value={e.country}>{e.country}</option>
                      ))}

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 import { Countries } from "./countries"
-
+import "./home.css"
 export const Navbar =()=>{
 
     return (
-        <div style={{display:"flex",justifyContent:"space-evenly",backgroundColor:"skyblue",padding:"6px"}}>
+        <div id="nav_div" style={{display:"flex",justifyContent:"space-evenly",backgroundColor:"skyblue",padding:"6px"}}>
             
 
             <button>
