@@ -6,6 +6,7 @@ import "./home.css"
 export const Countries =()=>{
   const [country,setCountry]=useState({})
     
+  //code for handle submit
     const handlesubmit =(e)=>{
         e.preventDefault()
         axios.post("http://localhost:8080/countries",country).then(()=>{
