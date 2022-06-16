@@ -8,8 +8,17 @@ import { Cities } from './components/cities'
 import { Navbar } from './components/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
+ // const [count, setCount] = useState(0)
+  //  let [temp,useTemp]=useState("yes")
 
+  //  const store=()=>{
+  //   console.log(temp)
+  //   if(temp=="yes"){
+  //     useTemp("true")
+  //   }else{
+  //     useTemp(false)
+  //   }
+  //  }
   return (
     <div className="App">
      <Navbar />
@@ -18,6 +27,7 @@ function App() {
        <Route path='/add-country' element={<Countries />} />
        <Route path='/add-city' element={<Cities />}/>
      </Routes>
+       {/* <button onClick={()=>store()}>click:{temp}</button> */}
     </div>
   )
 }
